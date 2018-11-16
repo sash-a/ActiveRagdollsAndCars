@@ -1,10 +1,9 @@
 ﻿using Unity.Mathematics;
 using UnityEngine;
-using static Unity.Mathematics.math;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     public float speed;
     public float lookSens;
@@ -15,14 +14,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Camera cam;
 
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
-
     void FixedUpdate()
     {
-        rotate();
+//        rotate();
         move();
     }
 
@@ -30,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         var x = Input.GetAxis("Horizontal");
         var y = Input.GetAxis("Vertical");
+        Debug.Log(x);
         var velocity = (x * transform.right + y * transform.forward).normalized * speed;
 
         rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
