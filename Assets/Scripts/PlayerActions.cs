@@ -34,4 +34,11 @@ public class PlayerActions : MonoBehaviour
     {
         Debug.Log("L");
     }
+
+    public void rotateArm(Transform arm, Quaternion targetRotation)
+    {
+        Debug.Log("Hands up");
+//        arm.rotation = Quaternion.Slerp(arm.rotation, targetRotation, 0.2f);
+        arm.localRotation = targetRotation;
+    }
 }

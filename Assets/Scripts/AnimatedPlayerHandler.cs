@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 
 public class AnimatedPlayerHandler : MonoBehaviour
 {
-    public GameObject animPlayer;
+    public Transform animPlayer;
 
     void Update()
     {
-        Debug.Log(transform.position);
-        animPlayer.transform.SetPositionAndRotation(transform.position, transform.rotation);
+        animPlayer.position = transform.position;
     }
 }

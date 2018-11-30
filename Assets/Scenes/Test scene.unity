@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &420525364 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8457612780130295346, guid: 52152f445447d9a4b8b8f2f0260432d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1899907680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &548076476
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +204,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &769448026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8457612780130779672, guid: 52152f445447d9a4b8b8f2f0260432d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1899907680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1132495509
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,51 +370,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1394761319 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8457612780592982989, guid: 52152f445447d9a4b8b8f2f0260432d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1899907680}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1394761322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394761319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95bc99a7f274125419a491bea5fdc0d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
---- !u!114 &1394761323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394761319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8245d5bfdf0c1499083a6bcf58a2ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actions: {fileID: 1394761322}
---- !u!114 &1394761324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394761319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fd264b8727dc10438e4415bcdea513d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animPlayer: {fileID: 420525364}
 --- !u!1001 &1899907680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,8 +437,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActiveRagdoll
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8457612780602464263, guid: 52152f445447d9a4b8b8f2f0260432d4, type: 3}
+    - target: {fileID: 1394761323, guid: 52152f445447d9a4b8b8f2f0260432d4, type: 3}
+      propertyPath: rightArm
+      value: 
+      objectReference: {fileID: 769448026}
+    - target: {fileID: 1394761323, guid: 52152f445447d9a4b8b8f2f0260432d4, type: 3}
+      propertyPath: rightArmDownRotation.z
+      value: -94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394761323, guid: 52152f445447d9a4b8b8f2f0260432d4, type: 3}
+      propertyPath: rightArmUpRotation.z
+      value: -10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52152f445447d9a4b8b8f2f0260432d4, type: 3}
 --- !u!1 &2025177262
 GameObject:
